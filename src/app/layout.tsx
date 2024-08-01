@@ -18,10 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="min-h-screen bg-lime-900 font-sans flex flex-col">
+        <div className="min-h-screen max-h-screen bg-slate-900 font-sans flex flex-col overflow-hidden">
           <Header />
-          <div className="flex flex-grow">{children}</div>
-          {/* <Footer/>  */}
+          <div className="flex flex-grow overflow-auto">{children}</div>
         </div>
       </body>
     </html>
